@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Confort Durable : Votre Pompe à Chaleur Premium | Éligibilité MaPrimeRénov'</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- VARIABLES & RESET --- */
+        :root {
+            --brand-dark: #0F172A;
+            --brand-primary: #2563EB;
+            --brand-accent: #C29B40;
+            --text-main: #334155;
+            --text-light: #64748B;
+            --bg-light: #F8FAFC;
+            --white: #FFFFFF;
+            --shadow-premium: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease-in-out;
+            --radius: 12px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: var(--brand-dark);
+            line-height: 1.2;
+        }
+
+        a { text-decoration: none; transition: var(--transition); }
+        ul { list-style: none; }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 4rem auto;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--brand-dark);
+        }
+        .logo span { color: var(--brand-primary); }
+
+        .nav-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--brand-dark);
+            font-weight: 600;
+            padding: 0.6rem 1.2rem;
+            border: 2px solid #E2E8F0;
+            border-radius: 50px;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            padding-top: 10rem;
+            padding-bottom: 6rem;
+            background-color: var(--white);
+            background-image: 
+                radial-gradient(at 10% 10%, rgba(37, 99, 235, 0.05) 0px, transparent 50%),
+                radial-gradient(at 90% 90%, rgba(194, 155, 64, 0.05) 0px, transparent 50%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .badge-premium {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(194, 155, 64, 0.1);
+            color: var(--brand-accent);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(194, 155, 64, 0.2);
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            letter-spacing: -1px;
+            margin-bottom: 1.5rem;
+        }
+        .hero-content h1 span.highlight { color: var(--brand-primary); }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        .hero-benefits {
+            margin-bottom: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 500;
+            color: var(--brand-dark);
+        }
+        .benefit-icon { width: 24px; height: 24px; color: var(--brand-primary); }
+
+        /* --- FORMULAIRE --- */
+        .lead-form {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-premium);
+            border: 1px solid #F1F5F9;
+        }
+
+        .form-header { text-align: center; margin-bottom: 2rem; }
+        .form-header h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+        .form-group { margin-bottom: 1.2rem; }
+        .form-label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 0.4rem;
+            color: var(--brand-dark);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.9rem 1.25rem;
+            border: 2px solid #E2E8F0;
+            border-radius: var(--radius);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--brand-primary);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        }
+
+        .btn-premium {
+            width: 100%;
+            background: var(--brand-primary);
+            color: var(--white);
+            padding: 1.1rem;
+            border: none;
+            border-radius: var(--radius);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        .btn-premium:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 1.2rem;
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        /* --- SECTIONS SUIVANTES --- */
+        .engagement { padding: 6rem 0; background-color: var(--brand-dark); color: var(--white); }
+        .engagement-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .engagement-content h2 { color: var(--white); font-size: 2.5rem; margin-bottom: 1.5rem; }
+        .engagement-image img { width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+
+        .services { padding: 6rem 0; background-color: var(--white); }
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .service-card { background: var(--bg-light); padding: 2.5rem; border-radius: 20px; border: 1px solid #E2E8F0; }
+        .service-icon { width: 50px; height: 50px; background: var(--white); color: var(--brand-primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+        footer { background-color: #0f172a; color: #94A3B8; padding: 3rem 0; border-top: 1px solid #1E293B; }
+        .footer-wrap { display: flex; justify-content: space-between; align-items: center; }
+
+        @media (max-width: 1024px) {
+            .hero-grid, .engagement-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-content { display: flex; flex-direction: column; align-items: center; }
+            .hero-benefits { justify-content: center; }
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-wrap">
+            <div class="logo">France<span>Energie</span></div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge-premium">Installation Certifiée RGE - État 2026</div>
+                <h1>Passez au <span class="highlight">Chauffage Premium</span> pour 1€</h1>
+                <p class="hero-description">Remplacez votre vieille chaudière et divisez vos factures par 3 grâce aux aides MaPrimeRénov'.</p>
+                
+                <div class="hero-benefits">
+                    <div class="benefit-item">✅ Économies Immédiates</div>
+                    <div class="benefit-item">✅ Matériel Garanti 10 ans</div>
+                    <div class="benefit-item">✅ Zéro Avance de Frais</div>
+                    <div class="benefit-item">✅ Pose en 48h Chrono</div>
+                </div>
+            </div>
+
+            <div class="hero-form-container">
+                <div class="lead-form">
+                    <div class="form-header">
+                        <h3>Vérifiez votre Éligibilité</h3>
+                        <p>Gratuit et sans engagement</p>
+                    </div>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label class="form-label">Nom Complet</label>
+                            <input type="text" class="form-input" placeholder="Prénom et Nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Vous êtes ?</label>
+                            <select class="form-input" required>
+                                <option value="" disabled selected>Sélectionnez...</option>
+                                <option value="proprietaire">Propriétaire Occupant</option>
+                                <option value="bailleur">Propriétaire Bailleur</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Chauffage actuel</label>
+                            <select class="form-input" required>
+                                <option value="" disabled selected>Source d'énergie...</option>
+                                <option value="fioul">Chaudière Fioul</option>
+                                <option value="gaz">Chaudière Gaz</option>
+                                <option value="electrique">Électricité</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Code Postal</label>
+                            <input type="text" class="form-input" placeholder="ex: 75001" required pattern="[0-9]{5}">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Téléphone</label>
+                            <input type="tel" class="form-input" placeholder="06 00 00 00 00" required>
+                        </div>
+                        
+                        <button type="submit" class="btn-premium">VOIR MES AIDES DISPONIBLES</button>
+                        <p class="form-footer">⚡ Données sécurisées - Conforme RGPD</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement">
+        <div class="container engagement-grid">
+            <div class="engagement-image">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Confort">
+            </div>
+            <div class="engagement-content">
+                <h2>Le luxe d'un chauffage écologique et économique</h2>
+                <p>Nos solutions de Pompes à Chaleur (PAC) utilisent l'énergie gratuite de l'air pour chauffer votre intérieur et votre eau sanitaire, même par grand froid.</p>
+                <p>Une installation soignée par nos experts certifiés RGE pour une sérénité totale.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Pourquoi nous choisir ?</h2>
+            <div class="services-grid">
+                <div class="service-card"><h4>Économies</h4><p>Réduisez votre empreinte carbone et vos factures dès le premier mois.</p></div>
+                <div class="service-card"><h4>Expertise</h4><p>Artisans locaux qualifiés RGE pour une pose aux normes de sécurité.</p></div>
+                <div class="service-card"><h4>Sérénité</h4><p>Nous gérons l'intégralité de votre dossier administratif d'aides.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-wrap">
+            <div class="logo" style="color:white;">France<span>Energie</span></div>
+            <p>&copy; 2026 France Energie. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
